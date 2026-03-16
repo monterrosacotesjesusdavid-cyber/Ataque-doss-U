@@ -6,4 +6,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["locust", "--headless", "--users", "200", "--spawn-rate", "20", "--run-time", "24h", "--host", "https://siginv.uniguajira.edu.co", "-f", "locustfile.py"]
+CMD ["locust", "--headless", "--users", "500", "--spawn-rate", "50", "--run-time", "24h", "--host", "https://siginv.uniguajira.edu.co", "-f", "locustfile.py"]
